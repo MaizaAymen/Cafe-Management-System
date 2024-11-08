@@ -6,18 +6,31 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BestSellerComponent } from './best-seller/best-seller.component';
-
+import { FullComponent } from './layouts/full/full.component';
+import { AppHeaderComponent } from './layouts/full/header/header.component';
+import { AppSidebarComponent } from './layouts/full/sidebar/sidebar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BestSellerComponent
+    BestSellerComponent,
+    FullComponent,
+    AppHeaderComponent,
+    AppSidebarComponent,
+    MatToolbarModule,
+    MatSidenavModule
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
-    
+    MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    FlexLayoutModule,
   ],
   providers: [
     provideAnimationsAsync()
