@@ -1,27 +1,70 @@
-# Aymen
+# Cafe Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+A Cafe Management System developed using Angular is a web application designed to streamline and enhance the management of a café or restaurant. This system includes various features that cater to both the front-end (customer interaction) and back-end (administrative tasks) processes of café management.
 
-## Development server
+## Project Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Objective
+To create an efficient and user-friendly web application that helps café owners manage their business operations smoothly, including customer orders, inventory, staff management, and more.
 
-## Code scaffolding
+### Key Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **User Authentication:**
+  - User registration and login for café staff and administrators.
+  - Role-based access control to restrict and allow features based on the user’s role (admin, cashier, manager).
 
-## Build
+- **Menu Management:**
+  - Admins can add, edit, or remove menu items, including their descriptions, prices, and images.
+  - Option to categorize menu items (e.g., beverages, food items, desserts).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Order Management:**
+  - Customers can view the menu and place orders.
+  - Admin can view active orders, manage the order status (e.g., in preparation, completed), and track order history.
 
-## Running unit tests
+- **Table Management:**
+  - Ability to manage table reservations and availability.
+  - View current table statuses (occupied, available, reserved).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Inventory Management:**
+  - Real-time tracking of inventory levels for ingredients and supplies.
+  - Notifications for low stock items to enable timely reordering.
 
-## Running end-to-end tests
+- **Billing and Invoicing:**
+  - Generate invoices for completed orders.
+  - Print or send invoices electronically to customers.
+  - Support for different payment methods (cash, credit card, online payment options).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Customer Feedback:**
+  - Interface for customers to provide feedback and rate their dining experience.
+  - Admin view to analyze customer feedback for improvement purposes.
 
-## Further help
+- **Reporting and Analytics:**
+  - Generate reports on sales, popular menu items, and inventory status.
+  - Visual analytics and charts to assist in decision-making processes.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Responsive Design:**
+  - A mobile-friendly interface that ensures a seamless experience across different devices (desktops, tablets, smartphones).
+
+## Technologies Used
+
+### Frontend
+- **Angular:** For building the dynamic and responsive user interface.
+- **HTML/CSS:** For structuring and styling the web pages.
+- **Bootstrap or Material Design:** For creating a visually appealing layout.
+
+### Backend
+- **Node.js or Express:** To handle API requests and manage server-side logic.
+- **Database:** MongoDB, MySQL, or Firebase for storing user data, menu items, orders, etc.
+
+## Additional Considerations
+- **Deployment:** Host the application on platforms such as Heroku, AWS, or Netlify for easy access and scalability.
+- **Testing:** Implement tests using frameworks like Jasmine or Karma for Angular to ensure the application functions correctly.
+- **Documentation:** Maintain clear documentation for future development and operational purposes.
+
+## Conclusion
+The Cafe Management System is a comprehensive solution aimed at modernizing the way cafés operate, enhancing customer experience, and improving operational efficiency. By utilizing Angular for the front-end, it ensures a responsive and engaging user experience while facilitating seamless handling of café management processes for administrators and staff.
+## Start the application:
+```bash
+cd cafe-management-system
+npm install
+ng serve
