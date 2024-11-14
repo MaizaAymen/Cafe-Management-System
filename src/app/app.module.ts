@@ -6,22 +6,25 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BestSellerComponent } from './best-seller/best-seller.component';
-import { FullComponent } from './layouts/full/full.component';
-import { AppHeaderComponent } from './layouts/full/header/header.component';
-import { AppSidebarComponent } from './layouts/full/sidebar/sidebar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FullComponent } from './full/full.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BestSellerComponent,
+    HeaderComponent,
+    SidebarComponent,
     FullComponent,
-    AppHeaderComponent,
-    AppSidebarComponent,
-    MatToolbarModule,
-    MatSidenavModule
+   
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSidenavModule,
     MatIconModule,
     FlexLayoutModule,
+    RouterModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [
     provideAnimationsAsync()
