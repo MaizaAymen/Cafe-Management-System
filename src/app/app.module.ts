@@ -13,8 +13,10 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { FullComponent } from './full/full.component';
+import { SidebarComponent } from './layouts/sidebar/sidebar.component';
+import { FullComponent } from './layouts/sidebar/full/full.component';
+import { DashbordComponent } from './dashbord/dashbord.component';
+import { ViewBillProductsComponent } from './src/app/material-component/view-bill-products/view-bill-products.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FullComponent } from './full/full.component';
     HeaderComponent,
     SidebarComponent,
     FullComponent,
+    DashbordComponent,
+    ViewBillProductsComponent,
    
   ],
   imports: [
