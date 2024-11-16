@@ -2,7 +2,7 @@ import { ChangeDetectorRef, Component, OnDestroy, AfterViewInit } from '@angular
 import { MediaMatcher } from '@angular/cdk/layout';
 @Component({
   selector: 'app-full',
-  templateUrl: './full.component.html',
+  templateUrl: './full.component.htm',
   styleUrl: './full.component.scss'
 })
 export class FullComponent {
